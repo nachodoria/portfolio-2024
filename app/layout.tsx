@@ -18,7 +18,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
     <html lang="en" className={`${cormorant_Garamond.variable} ${monosans.variable} scroll-smooth`} >
       <meta name='viewport' content='width=device-width,initial-scale=1'></meta>
       <head>
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/images/favicon.svg" />
       </head>
         <body className="bg-background">{children}</body>
     </html>
