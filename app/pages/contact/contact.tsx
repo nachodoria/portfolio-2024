@@ -1,13 +1,17 @@
 "use client";
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Stagger from "../../components/Stagger.js"
-import Ease from "../../components/Ease"
 import MoveUp from '../../components/MoveUp';
 import Object from "@/app/components/Object.jsx";
 import { extendVariants, Input, Button } from "@nextui-org/react";
-
-
+import {
+    Modal,
+    ModalContent,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+    useDisclosure
+} from "@nextui-org/react";
 
 const MyInput = extendVariants(Input, {
     variants: {
@@ -26,11 +30,12 @@ const MyInput = extendVariants(Input, {
 });
 
 export default function Contact() {
-
     const [email, setEmail] = useState('');
     const [idea, setIdea] = useState('');
     const [name, setName] = useState('');
     const [isValidEmail, setIsValidEmail] = useState(true);
+    const { isOpen, onOpen, onOpenChange } = useDisclosure();
+    console.log(email)
 
     const handleEmailChange = (value: string) => {
         setEmail(value);
@@ -47,7 +52,7 @@ export default function Contact() {
     const handleNameChange = (name: string) => {
         setName(name);
     };
-4
+    4
 
 
     const form = useRef<HTMLFormElement>(null);
@@ -55,6 +60,8 @@ export default function Contact() {
 
     function sendEmail(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
+
+
         if (form.current) {
             emailjs.send("service_73bx1vo", "template_ofpzphh", {
                 from_name: name,
@@ -65,6 +72,14 @@ export default function Contact() {
 
             }
             )
+                .then((result) => {
+                    console.log('SUCCESS!', result.text);
+                    onOpen();
+                }, (error) => {
+                    console.log('FAILURE...', error.message);
+                    alert("Plese check your data is correct!");
+                });
+
         }
     };
     return (
@@ -83,8 +98,32 @@ export default function Contact() {
                         <MyInput name="message" onValueChange={handleIdeaChange} value={idea} className="w-full sm:w-9/12 pt-4 sm:pt-8" variant="bordered" size="lg" label="Your Idea"></MyInput>
                     </Object>
                     <Object dl={2}>
-                        <Button type="submit" value="Send" color="primary" className="mt-4 sm:mt-8" size="lg">Send your Idea</Button>
+                        <Button type="submit" isDisabled={!isValidEmail || email == '' || name == '' || idea == ''} value="Send" color="primary" className="mt-4 sm:mt-8" size="lg">Send your Idea</Button>
                     </Object>
+                    <Modal classNames={{
+                        body: "py-5",
+                        backdrop: "bg-foreground/50 backdrop-opacity-100",
+                        base: "border-[#292f46] bg-foreground/100 dark:bg-foreground/40 text-background/100",
+                        header: "border-b-[1px] border-background/20",
+                        footer: "border-t-[1px] border-background/20",
+                        closeButton: "hover:bg-white/10 active:bg-white/20",
+                    }} isOpen={isOpen} onOpenChange={onOpenChange} size="sm">
+                        <ModalContent>
+                            {(onClose) => (
+                                <>
+                                    <ModalHeader className="flex flex-col gap-1">Request received ✅</ModalHeader>
+                                    <ModalBody>
+                                        <h2>Your request has been received and I will be in touch with you soon.</h2>
+                                    </ModalBody>
+                                    <ModalFooter>
+                                        <Button color="primary" onPress={onClose}>
+                                            Got It!
+                                        </Button>
+                                    </ModalFooter>
+                                </>
+                            )}
+                        </ModalContent>
+                    </Modal>
                 </form>
                 <div className="flex items-start justify-start flex-col pt-6 w-full lg:flex-row lg:items-center ">
                     <MoveUp delay={2} text="Or email me at" className="pr-2 min-w-32 text-left font-monosans font-medium text-md text-foreground/70 subpixel-antialiased sm:text-lg"></MoveUp>
