@@ -17,7 +17,7 @@ export default function About() {
                 <div className='flex flex-col items-start justify-center w-full '>
                     <Stagger cl="mb-3 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl sm:mb-6" text="About me"></Stagger>
 
-                    <MoveUp delay={1} className="pb-4 text-left font-monosans font-medium text-xl text-foreground subpixel-antialiased sm:text-2xl" text="Education Background"></MoveUp>
+                    <MoveUp delay={1} className="pb-4 text-left font-monosans font-medium text-xl text-foreground subpixel-antialiased sm:text-2xl" text="Educational Background"></MoveUp>
                     <div className="pb-4 w-max-lg flex flex-row font-monosans font-regular text-foreground subpixel-antialiased items-start">
                         <Object dl={2}
                             cl='h-3 min-w-3 bg-foreground/40 rounded-full mr-4 mt-2'>

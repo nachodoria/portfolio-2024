@@ -22,7 +22,7 @@ export default function Home() {
                             <span>👋</span>
                         </Object>
                     </div>
-                    <Ease delay={1.6} cl="text-left h-auto max-w-full flex justify-center items-center font-monosans font-medium text-3xl text-foreground subpixel-antialiased md:text-6xl" text="Computer Science student and Web Developer for 4 years and counting "></Ease>
+                    <Ease delay={1.6} cl="text-left h-auto w-full flex justify-center items-center font-monosans font-medium text-4xl text-foreground subpixel-antialiased md:text-6xl" text="A dedicated Computer Science student with a passion for coding, aspiring to become a Web Developer."></Ease>
                     <Object dl={2} cl="block">
                         <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">Let's Talk</Button>
                     </Object>

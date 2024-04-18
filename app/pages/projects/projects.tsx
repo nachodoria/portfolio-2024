@@ -6,7 +6,7 @@ import AnimatedLink from "../../components/Link.jsx"
 export default function Projects() {
     return (
         <div className="flex items-center justify-center flex-col h-screen w-full display-block">
-            <Stagger delay={0} cl="mb-10 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl" text={"Recent Work"}></Stagger>
+            <Stagger delay={0} cl="mb-10 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl" text={"Recent Projects"}></Stagger>
 
             <div className="text-center pb-10">
                 <div className="text-xl sm:text-2xl font-monosans font-medium text-foreground subpixel-antialiased">

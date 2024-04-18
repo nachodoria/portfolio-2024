@@ -87,7 +87,7 @@ export default function Contact() {
                     </Object>
                 </form>
                 <div className="flex items-start justify-start flex-col pt-6 w-full lg:flex-row lg:items-center ">
-                    <MoveUp delay={2} text="Or just email me at" className="pr-2 min-w-32 text-left font-monosans font-medium text-md text-foreground/70 subpixel-antialiased sm:text-lg"></MoveUp>
+                    <MoveUp delay={2} text="Or email me at" className="pr-2 min-w-32 text-left font-monosans font-medium text-md text-foreground/70 subpixel-antialiased sm:text-lg"></MoveUp>
                     <Object dl={2}>
                         <a className="text-left font-monosans font-medium text-md text-foreground/50 subpixel-antialiased hover:text-foreground/90 duration-250 sm:text-lg" href="mailto:ignaciodoria01@gmail.com">ignaciodoria01@gmail.com</a>
                     </Object>
