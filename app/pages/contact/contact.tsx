@@ -65,14 +65,6 @@ export default function Contact() {
 
             }
             )
-                .then(
-                    () => {
-                        console.log('SUCCESS!');
-                    },
-                    (error) => {
-                        console.log('FAILED...', error.text);
-                    },
-                );
         }
     };
     return (
