@@ -27,7 +27,7 @@ export default function Home() {
                         <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">Let's Talk</Button>
                     </Object>
                     <Object dl={3} cl="absolute bottom-32 md:bottom-10">
-                        <div className="text-center h-auto font-monosans font-medium text-lg text-foreground subpixel-antialiased">Scroll to get started  ⬇️</div>
+                        <div className="hidden text-center h-auto font-monosans font-medium text-lg text-foreground subpixel-antialiased sm:block">Scroll to get started  ⬇️</div>
                     </Object>
                 </div>
             </div>
