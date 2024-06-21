@@ -4,16 +4,6 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "@nextui-org/react";
 
-const Word = styled(motion.span)`
-  display: inline-block;
-  margin-right: 0.25em;
-  white-space: nowrap;
-`;
-
-const Character = styled(motion.span)`
-  display: inline-block;
-  margin-right: -0.05em;
-`;
 
 export default function AnimatedLink(text, className, delay, h) {
     const txt = text.text;

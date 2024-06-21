@@ -17,16 +17,16 @@ export default function Home() {
             <div className="flex items-start justify-start flex-col h-screen w-full  pl-10 ">
                 <div className="flex w-4/6 h-screen flex-col items-start justify-center">
                     <div className="flex flex-row items-center justify-center pb-4 ">
-                        <Stagger delay={0.5} text={"Hey! I'm Ignacio"} cl="text-left h-auto font-monosans font-medium text-xl text-foreground subpixel-antialiased md:text-2xl"></Stagger>
-                        <Object dl={1.2} cl="pl-2">
+                        <Stagger delay={0.2} text={"Hey! I'm Ignacio"} cl="text-left h-auto font-monosans font-medium text-xl text-foreground subpixel-antialiased md:text-2xl"></Stagger>
+                        <Object dl={1} cl="pl-2">
                             <span>👋</span>
                         </Object>
                     </div>
-                    <Ease delay={1.6} cl="text-left h-auto w-full flex justify-center items-center font-monosans font-medium text-4xl text-foreground subpixel-antialiased md:text-6xl" text="A dedicated Computer Science student with a passion for coding, aspiring to become a Software Engineer."></Ease>
-                    <Object dl={2} cl="block">
+                    <Ease delay={1.2} cl="text-left h-auto w-full flex justify-center items-center font-monosans font-medium text-4xl text-foreground subpixel-antialiased md:text-6xl" text="A dedicated Computer Science student with a passion for coding, aspiring to become a Software Engineer."></Ease>
+                    <Object dl={1.4} cl="block">
                         <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">Let's Talk</Button>
                     </Object>
-                    <Object dl={3} cl="absolute bottom-32 md:bottom-10">
+                    <Object dl={1.6} cl="absolute bottom-32 md:bottom-10">
                         <div className="hidden text-center h-auto font-monosans font-medium text-lg text-foreground subpixel-antialiased sm:block">Scroll to get started  ⬇️</div>
                     </Object>
                 </div>
