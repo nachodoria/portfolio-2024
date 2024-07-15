@@ -47,7 +47,7 @@ export default function Stagger(text, cl) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: [0.2, 0.65, 0.3, 0.9],
         damping: 200,
         stiffness: 200

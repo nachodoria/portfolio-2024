@@ -17,7 +17,7 @@ export default function Home() {
             <div className="flex items-start justify-start flex-col h-screen w-full  pl-10 ">
                 <div className="flex w-4/6 h-screen flex-col items-start justify-center">
                     <div className="flex flex-row items-center justify-center pb-4 ">
-                        <Stagger delay={0.2} text={"Hey! I'm Ignacio"} cl="text-left h-auto font-monosans font-medium text-xl text-foreground subpixel-antialiased md:text-2xl"></Stagger>
+                        <Stagger delay={0.1} text={"Hey! I'm Ignacio"} cl="text-left h-auto font-monosans font-medium text-xl text-foreground subpixel-antialiased md:text-2xl"></Stagger>
                         <Object dl={1} cl="pl-2">
                             <span>👋</span>
                         </Object>

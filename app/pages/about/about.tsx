@@ -58,7 +58,7 @@ export default function About() {
                     </Object>
                 </div>
                 <div className='flex flex-col items-end w-6/12 '>
-                    <Ease delay={2.5} cl="hidden max-w-96 text-right font-monosans font-regular text-lg text-foreground subpixel-antialiased sm:max-w-56 sm:min-w-48 sm:text-2xl md:block" text={"Greetings! I'm Ignacio, originally from Buenos Aires, Argentina, now calling Toronto, Canada home. Currently, I'm pursuing my passion for computer science as a student at York University, striving to enrich both my expertise and practical experience in the field."}></Ease>
+                    <Ease delay={2.5} cl="hidden max-w-96 text-right font-monosans font-regular text-lg text-foreground subpixel-antialiased sm:max-w-56 sm:min-w-48 sm:text-2xl md:block" text={"Originally from Buenos Aires, Argentina, I now call Toronto, Canada home. Currently pursuing my passion for computer science as a student at York University, striving to enrich both my expertise and practical experience in the field."}></Ease>
                 </div>
 
             </div>
