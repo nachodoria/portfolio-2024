@@ -16,16 +16,18 @@ import {
 const MyInput = extendVariants(Input, {
     variants: {
         color: {
-            stone: {
+            default: {
                 inputWrapper: [
                     "border-foreground/50",
+                    "text-foreground"
                 ],
             },
+
         },
 
     },
     defaultVariants: {
-        color: "stone",
+        color: "default",
     },
 });
 
@@ -87,7 +89,7 @@ export default function Contact() {
             <div className="w-full px-16 flex items-start flex-col justify-between sm:w-1/2 sm:px-0 ">
                 <MoveUp delay={0.5} text="Ready to innovate? Contact me 📫" className="pb-3 text-left font-monosans font-medium text-xl text-foreground subpixel-antialiased w-full sm:text-4xl" ></MoveUp>
                 <MoveUp delay={0.7} text="I am open to creative and cooperative work. " className="text-left font-monosans font-medium text-lg text-foreground/70 subpixel-antialiased sm:text-2xl" ></MoveUp>
-                <form onSubmit={sendEmail} ref={form} className='w-full'>
+                <form onSubmit={sendEmail} ref={form} className='dark w-full'>
                     <Object dl={1.5} cl="w-full">
                         <MyInput type="text" name="user_name" onValueChange={handleNameChange} value={name} className="w-10/12 sm:w-6/12 pt-5 sm:pt-8" variant="bordered" size="lg" label="Name"></MyInput>
                     </Object>

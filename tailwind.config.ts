@@ -13,8 +13,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'background': '#FCFBF3',
-        'foreground': '#1E1E1E',
+        'background': '#1E1E1E',
+        'foreground': '#FCFBF3',
       },
       fontFamily: {
         garamond: ['var(--font-garamond)'],
