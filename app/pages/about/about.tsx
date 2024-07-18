@@ -1,10 +1,8 @@
 "use client";
-import Stagger from "../../components/Stagger.js"
 import Ease from "../../components/Ease"
 import MoveUp from '../../components/MoveUp';
 import Object from '../../components/Object.jsx';
 import { Button } from "@nextui-org/react";
-import { saveAs } from "file-saver";
 
 
 export default function About() {
@@ -15,7 +13,7 @@ export default function About() {
         <div className="h-screen flex items-center justify-center w-full  ">
             <div className='h-screen flex items-center justify-center w-full pl-10 gap-0 md:gap-48 md:w-6/12 md:pl-0'>
                 <div className='flex flex-col items-start justify-center w-full '>
-                    <Stagger cl="mb-3 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl sm:mb-6" text="About me"></Stagger>
+                    <MoveUp className="mb-3 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl sm:mb-6" text="About me"></MoveUp>
 
                     <MoveUp delay={1} className="pb-4 text-left font-monosans font-medium text-xl text-foreground subpixel-antialiased sm:text-2xl" text="Educational Background"></MoveUp>
                     <div className="pb-4 w-max-lg flex flex-row font-monosans font-regular text-foreground subpixel-antialiased items-start">
