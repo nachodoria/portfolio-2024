@@ -23,7 +23,7 @@ export default function Home() {
                     </div>
                     <Ease delay={1.2} cl="text-left h-auto w-full flex justify-center items-center font-monosans font-medium text-4xl text-foreground subpixel-antialiased md:text-6xl" text="A dedicated Computer Science student with a passion for coding, aspiring to become a Software Engineer."></Ease>
                     <Object dl={1.4} cl="block">
-                        <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">Let's Talk</Button>
+                        <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">LinkedIn</Button>
                     </Object>
                     <Object dl={1.6} cl="absolute bottom-32 md:bottom-10">
                         <div className="hidden text-center h-auto font-monosans font-medium text-lg text-foreground subpixel-antialiased sm:block">Scroll to get started  ⬇️</div>

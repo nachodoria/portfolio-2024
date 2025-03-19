@@ -6,9 +6,9 @@ import { Button } from "@nextui-org/react";
 
 
 export default function About() {
-    const downloadFile = () => {
-        window.open('/cv.pdf', '_blank');
-    };
+    function openPage() {
+        window.open("https://www.linkedin.com/in/ignacio-doria-oberman-459b33267/");
+    }
     return (
         <div className="h-screen flex items-center justify-center w-full  ">
             <div className='h-screen flex items-center justify-center w-full pl-10 gap-0 md:gap-48 md:w-6/12 md:pl-0'>
@@ -52,7 +52,7 @@ export default function About() {
                         </div>
                     </div>
                     <Object dl={3}>
-                        <Button target="_blank" onPress={downloadFile} size="lg" className="mt-6" color="primary">Download CV</Button>
+                        <Button target="_blank" onPress={openPage} size="lg" color="primary" className="mt-10">Let's Talk</Button>
                     </Object>
                 </div>
                 <div className='flex flex-col items-end w-6/12 '>
