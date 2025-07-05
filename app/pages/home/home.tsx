@@ -17,7 +17,7 @@ export default function Home() {
                 <div className="flex w-4/6 h-screen flex-col items-start justify-center">
                     <div className="flex flex-row items-center justify-center pb-4 ">
                         <MoveUp delay={0.1} text={"Hey! I'm Ignacio"} className="text-left h-auto font-monosans font-medium text-xl text-foreground subpixel-antialiased md:text-2xl"></MoveUp>
-                        <Object dl={1} cl="pl-2">
+                        <Object dl={0.3} cl="pl-2">
                             <span>👋</span>
                         </Object>
                     </div>

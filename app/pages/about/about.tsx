@@ -10,7 +10,7 @@ export default function About() {
         window.open("https://www.linkedin.com/in/ignacio-doria-oberman-459b33267/");
     }
     return (
-        <div className="h-screen flex items-center justify-center w-full  ">
+        <div className="h-screen flex items-center justify-center w-full">
             <div className='h-screen flex items-center justify-center w-full pl-10 gap-0 md:gap-48 md:w-6/12 md:pl-0'>
                 <div className='flex flex-col items-start justify-center w-full '>
                     <MoveUp className="mb-3 text-center h-auto flex justify-center items-center font-monosans text-2xl font-medium text-foreground subpixel-antialiased sm:text-4xl sm:mb-6" text="About me"></MoveUp>
